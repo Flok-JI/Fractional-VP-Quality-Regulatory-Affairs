@@ -1,0 +1,1360 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Florian Krafft – Fractional VP Quality &amp; Regulatory | Berlin</title>
+  <meta
+    name="description"
+    content="Fractional VP Quality &amp; Regulatory für die Frühphase von Spin-offs: Schärfung der Idee &amp; regulatorische Strategie, Businesskonzept für Investoren, erste QM-Prozesse und TD-Nachweise sowie Ausbau von QM/RA und Unternehmensplanung."
+  />
+
+  <!-- Google Fonts: Geometric Sans-Serif (Inter / Plus Jakarta Sans) paired with Editorial Serif -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,600;6..72,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    /* ==========================================================================
+       1. DESIGN-TOKENS: CLINICAL PRECISION IN BLUTÖNEN
+       ========================================================================== */
+    :root {
+      --bg-page: #F2F6FA;
+      --bg-surface: #FFFFFF;
+      --bg-subtle: #E6EEF6;
+      --bg-tint-strong: #DCE7F3;
+
+      --ink-primary: #0D223A;
+      --ink-secondary: #284363;
+      --ink-muted: #536E8D;
+
+      --accent: #145DA0;
+      --accent-hover: #0E4578;
+      --accent-soft: #E3EFFB;
+      --accent-border: #AECBE8;
+      --navy-deep: #0F2C4C;
+
+      --border-hairline: #C9D8E8;
+      --border-strong: #ACC2D8;
+
+      --font-heading: "Newsreader", Georgia, Palatino, "Palatino Linotype", "Book Antiqua", serif;
+      --font-body: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+      --radius-square: 2px;
+      --radius-md: 4px;
+      --radius-lg: 6px;
+
+      --shadow-card: 0 6px 20px -8px rgba(13, 34, 58, 0.12);
+      --shadow-soft: 0 2px 6px -2px rgba(13, 34, 58, 0.06);
+    }
+
+    /* ==========================================================================
+       2. BASIS-RESET & TYPOGRAFIE
+       ========================================================================== */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: var(--font-body);
+      font-size: 1rem;
+      line-height: 1.65;
+      color: var(--ink-primary);
+      background-color: var(--bg-page);
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: var(--font-heading);
+      color: var(--ink-primary);
+      line-height: 1.2;
+      margin: 0;
+      font-weight: 700;
+      letter-spacing: -0.015em;
+    }
+
+    h4 {
+      font-family: var(--font-body);
+      color: var(--ink-primary);
+      line-height: 1.35;
+      margin: 0;
+      font-weight: 700;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font-family: inherit;
+      font-size: inherit;
+    }
+
+    :focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1120px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+    }
+
+    @media (min-width: 640px) {
+      .container {
+        padding-left: 1.75rem;
+        padding-right: 1.75rem;
+      }
+    }
+
+    /* ==========================================================================
+       3. SEKTIONEN, TYPOGRAFIE-HILFEN & BUTTONS
+       ========================================================================== */
+    .section {
+      padding-top: 4.25rem;
+      padding-bottom: 4.25rem;
+    }
+
+    @media (min-width: 768px) {
+      .section {
+        padding-top: 5.5rem;
+        padding-bottom: 5.5rem;
+      }
+    }
+
+    .section-white {
+      background-color: var(--bg-surface);
+      border-top: 1px solid var(--border-hairline);
+      border-bottom: 1px solid var(--border-hairline);
+    }
+
+    .section-blue-tint {
+      background-color: var(--bg-subtle);
+      border-top: 1px solid var(--border-hairline);
+      border-bottom: 1px solid var(--border-hairline);
+    }
+
+    .eyebrow {
+      display: inline-block;
+      font-family: var(--font-body);
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.11em;
+      color: var(--accent);
+      margin-bottom: 0.65rem;
+    }
+
+    .section-heading {
+      font-size: 1.8rem;
+      margin-bottom: 0.9rem;
+    }
+
+    @media (min-width: 768px) {
+      .section-heading {
+        font-size: 2.3rem;
+      }
+    }
+
+    .section-lead {
+      font-size: 1.04rem;
+      color: var(--ink-secondary);
+      max-width: 48rem;
+      line-height: 1.7;
+    }
+
+    .section-header {
+      margin-bottom: 2.5rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.85rem 1.45rem;
+      border-radius: var(--radius-md);
+      font-weight: 600;
+      font-size: 0.94rem;
+      line-height: 1.2;
+      cursor: pointer;
+      border: 1px solid transparent;
+      transition: background-color 0.18s ease, border-color 0.18s ease, color 0.18s ease;
+    }
+
+    .btn-primary {
+      background-color: var(--accent);
+      color: #FFFFFF;
+      border-color: var(--accent);
+    }
+
+    .btn-primary:hover {
+      background-color: var(--accent-hover);
+      border-color: var(--accent-hover);
+    }
+
+    .btn-secondary {
+      background-color: var(--bg-surface);
+      color: var(--navy-deep);
+      border-color: var(--border-strong);
+    }
+
+    .btn-secondary:hover {
+      background-color: var(--bg-subtle);
+      border-color: var(--accent);
+    }
+
+    /* ==========================================================================
+       4. HEADER & NAVIGATION
+       ========================================================================== */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background-color: var(--bg-surface);
+      border-bottom: 1px solid var(--border-hairline);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 4.5rem;
+      gap: 1rem;
+    }
+
+    .brand-link {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      min-width: 0;
+    }
+
+    .brand-monogram {
+      width: 2.45rem;
+      height: 2.45rem;
+      border-radius: var(--radius-square);
+      background-color: var(--navy-deep);
+      color: #FFFFFF;
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 1rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+    }
+
+    .brand-name {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: var(--ink-primary);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .brand-sub {
+      font-size: 0.78rem;
+      color: var(--ink-muted);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .nav-desktop {
+      display: none;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    @media (min-width: 920px) {
+      .nav-desktop {
+        display: flex;
+      }
+    }
+
+    .nav-link {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--ink-secondary);
+      padding: 0.25rem 0;
+      border-bottom: 2px solid transparent;
+      transition: color 0.15s ease, border-color 0.15s ease;
+    }
+
+    .nav-link:hover {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
+
+    .menu-toggle {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 2.75rem;
+      height: 2.75rem;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-strong);
+      background-color: var(--bg-surface);
+      color: var(--navy-deep);
+      cursor: pointer;
+    }
+
+    @media (min-width: 920px) {
+      .menu-toggle {
+        display: none;
+      }
+    }
+
+    .nav-mobile {
+      display: none;
+      flex-direction: column;
+      gap: 0.35rem;
+      padding: 0.75rem 0 1.25rem;
+      border-top: 1px solid var(--border-hairline);
+    }
+
+    .nav-mobile.is-open {
+      display: flex;
+    }
+
+    .mobile-link {
+      padding: 0.7rem 0.85rem;
+      border-radius: var(--radius-square);
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--ink-primary);
+    }
+
+    .mobile-link:hover {
+      background-color: var(--bg-subtle);
+      color: var(--accent);
+    }
+
+    /* ==========================================================================
+       5. HERO-BEREICH & PRODUKTFOKUS-PRIORISIERUNG
+       ========================================================================== */
+    .hero {
+      padding-top: 3.25rem;
+      padding-bottom: 4.25rem;
+    }
+
+    @media (min-width: 768px) {
+      .hero {
+        padding-top: 4.5rem;
+        padding-bottom: 5.25rem;
+      }
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2.25rem;
+      align-items: start;
+    }
+
+    @media (min-width: 960px) {
+      .hero-grid {
+        grid-template-columns: 1.25fr 0.85fr;
+        gap: 2.75rem;
+      }
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.35rem 0.85rem;
+      border-radius: var(--radius-square);
+      background-color: var(--accent-soft);
+      border: 1px solid var(--accent-border);
+      color: var(--accent);
+      font-size: 0.82rem;
+      font-weight: 600;
+      margin-bottom: 1.15rem;
+    }
+
+    .hero-badge-dot {
+      width: 0.45rem;
+      height: 0.45rem;
+      background-color: var(--accent);
+    }
+
+    .hero-title {
+      font-size: 2.2rem;
+      margin-bottom: 1.15rem;
+    }
+
+    @media (min-width: 640px) {
+      .hero-title {
+        font-size: 2.9rem;
+      }
+    }
+
+    .hero-desc {
+      font-size: 1.05rem;
+      color: var(--ink-secondary);
+      line-height: 1.72;
+      margin-bottom: 1.65rem;
+      max-width: 42rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.85rem;
+      margin-bottom: 2rem;
+    }
+
+    .hero-meta-row {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.85rem;
+      padding-top: 1.4rem;
+      border-top: 1px solid var(--border-hairline);
+    }
+
+    @media (min-width: 640px) {
+      .hero-meta-row {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.1rem;
+      }
+    }
+
+    .hero-meta-item {
+      font-size: 0.85rem;
+      color: var(--ink-secondary);
+    }
+
+    .hero-meta-item strong {
+      display: block;
+      color: var(--navy-deep);
+      font-size: 0.88rem;
+      margin-bottom: 0.15rem;
+    }
+
+    .hero-aside-card {
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-hairline);
+      border-top: 3px solid var(--accent);
+      border-radius: var(--radius-lg);
+      padding: 1.65rem;
+      box-shadow: var(--shadow-card);
+    }
+
+    @media (min-width: 640px) {
+      .hero-aside-card {
+        padding: 2rem;
+      }
+    }
+
+    .aside-tag {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      color: var(--accent);
+      margin-bottom: 0.35rem;
+    }
+
+    .aside-title {
+      font-size: 1.35rem;
+      margin-bottom: 1.15rem;
+      padding-bottom: 0.9rem;
+      border-bottom: 1px solid var(--border-hairline);
+    }
+
+    .aside-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.95rem;
+    }
+
+    .aside-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.7rem;
+      font-size: 0.92rem;
+      color: var(--ink-secondary);
+    }
+
+    .aside-check {
+      width: 1.35rem;
+      height: 1.35rem;
+      border-radius: var(--radius-square);
+      background-color: var(--accent-soft);
+      border: 1px solid var(--accent-border);
+      color: var(--accent);
+      font-size: 0.8rem;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 0.1rem;
+    }
+
+    /* Produktfokus-Reihenfolge (1. Implantierbar -> 2. Nicht aktiv -> 3. Software -> 4. Aktiv) */
+    .product-priority-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.15rem;
+      margin-top: 1.75rem;
+    }
+
+    @media (min-width: 640px) {
+      .product-priority-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .product-priority-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    .priority-card {
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-strong);
+      border-radius: var(--radius-square);
+      padding: 1.35rem;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .priority-card.is-primary {
+      border-top: 3px solid var(--accent);
+    }
+
+    .priority-rank {
+      display: inline-block;
+      font-size: 0.74rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      background-color: var(--accent-soft);
+      border: 1px solid var(--accent-border);
+      border-radius: var(--radius-square);
+      padding: 0.2rem 0.55rem;
+      margin-bottom: 0.65rem;
+    }
+
+    .priority-title {
+      font-size: 1.12rem;
+      margin-bottom: 0.45rem;
+    }
+
+    .priority-desc {
+      font-size: 0.87rem;
+      color: var(--ink-secondary);
+      line-height: 1.55;
+    }
+
+    /* ==========================================================================
+       6. FRÜHPHASEN-LEISTUNGEN (4 EXAKTE PUNKTE)
+       ========================================================================== */
+    .pillars-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.35rem;
+    }
+
+    @media (min-width: 768px) {
+      .pillars-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.6rem;
+      }
+    }
+
+    .pillar-card {
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-strong);
+      border-radius: var(--radius-lg);
+      padding: 1.65rem;
+      box-shadow: var(--shadow-soft);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    @media (min-width: 640px) {
+      .pillar-card {
+        padding: 1.9rem;
+      }
+    }
+
+    .pillar-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+    }
+
+    .pillar-step {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.25rem 0.7rem;
+      border-radius: var(--radius-square);
+      background-color: var(--accent-soft);
+      border: 1px solid var(--accent-border);
+      color: var(--accent);
+      font-size: 0.78rem;
+      font-weight: 700;
+    }
+
+    .pillar-stage {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--ink-muted);
+    }
+
+    .pillar-title {
+      font-size: 1.32rem;
+      margin-bottom: 0.7rem;
+    }
+
+    .pillar-desc {
+      font-size: 0.94rem;
+      color: var(--ink-secondary);
+      margin-bottom: 1.1rem;
+    }
+
+    .pillar-points {
+      list-style: none;
+      margin: 0;
+      padding: 1rem 0 0;
+      border-top: 1px solid var(--border-hairline);
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      font-size: 0.88rem;
+      color: var(--ink-primary);
+    }
+
+    .pillar-points li {
+      position: relative;
+      padding-left: 1.15rem;
+    }
+
+    .pillar-points li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    /* ==========================================================================
+       7. ROLLENVERSTÄNDNIS IN DER FRÜHPHASE
+       ========================================================================== */
+    .two-col-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    @media (min-width: 768px) {
+      .two-col-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.75rem;
+      }
+    }
+
+    .info-card {
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-hairline);
+      border-radius: var(--radius-lg);
+      padding: 1.75rem;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .info-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.7rem;
+    }
+
+    .info-card p {
+      font-size: 0.94rem;
+      color: var(--ink-secondary);
+      margin-bottom: 1rem;
+    }
+
+    .info-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.55rem;
+      font-size: 0.9rem;
+      color: var(--ink-primary);
+    }
+
+    .info-list li {
+      position: relative;
+      padding-left: 1.2rem;
+    }
+
+    .info-list li::before {
+      content: "–";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    /* ==========================================================================
+       8. EXPERTISE / WIESO ICH (BERUFLICHE LAUFBAHN & ECKIGE AUSBILDUNGSKARTE)
+       ========================================================================== */
+    .profile-summary-box {
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-hairline);
+      border-radius: var(--radius-lg);
+      padding: 1.75rem;
+      box-shadow: var(--shadow-soft);
+      margin-bottom: 2.25rem;
+    }
+
+    @media (min-width: 640px) {
+      .profile-summary-box {
+        padding: 2.1rem;
+      }
+    }
+
+    .profile-summary-box p {
+      font-size: 0.96rem;
+      color: var(--ink-secondary);
+      line-height: 1.72;
+    }
+
+    .profile-summary-box p + p {
+      margin-top: 0.85rem;
+    }
+
+    .highlights-strip {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      margin-top: 1.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border-hairline);
+    }
+
+    @media (min-width: 768px) {
+      .highlights-strip {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.25rem;
+      }
+    }
+
+    .highlight-box {
+      background-color: var(--bg-page);
+      border: 1px solid var(--border-hairline);
+      border-left: 3px solid var(--accent);
+      border-radius: var(--radius-square);
+      padding: 1.05rem 1.15rem;
+    }
+
+    .highlight-box strong {
+      display: block;
+      font-size: 0.9rem;
+      color: var(--navy-deep);
+      margin-bottom: 0.25rem;
+    }
+
+    .highlight-box span {
+      display: block;
+      font-size: 0.85rem;
+      color: var(--ink-secondary);
+      line-height: 1.5;
+    }
+
+    .cv-section-label {
+      font-family: var(--font-heading);
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--ink-primary);
+      margin: 0 0 1.1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border-strong);
+    }
+
+    .career-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 1.15rem;
+    }
+
+    /* Einheitlicher eckiger Kasten (border-radius: 2px) für Berufliche Laufbahn & Ausbildung */
+    .career-card {
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-strong);
+      border-radius: var(--radius-square);
+      padding: 1.4rem 1.5rem;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .career-period {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--accent);
+      background-color: var(--accent-soft);
+      border: 1px solid var(--accent-border);
+      padding: 0.2rem 0.65rem;
+      border-radius: var(--radius-square);
+      margin-bottom: 0.5rem;
+    }
+
+    .career-title {
+      font-size: 1.06rem;
+      font-weight: 700;
+      color: var(--navy-deep);
+      line-height: 1.35;
+    }
+
+    .career-stage-note {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--ink-muted);
+      margin-top: 0.2rem;
+    }
+
+    .career-list {
+      list-style: none;
+      margin: 0.75rem 0 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.42rem;
+      font-size: 0.88rem;
+      color: var(--ink-secondary);
+    }
+
+    .career-list li {
+      position: relative;
+      padding-left: 1.1rem;
+    }
+
+    .career-list li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    .education-wrapper {
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <div id="site-app">
+    <!-- ==================== HEADER / NAVIGATION ==================== -->
+    <header class="site-header">
+      <div class="container">
+        <div class="header-inner">
+          <a href="#top" class="brand-link">
+            <span class="brand-monogram" aria-hidden="true">FK</span>
+            <span class="brand-text">
+              <span class="brand-name">Florian Krafft</span>
+              <span class="brand-sub">Fractional VP Quality &amp; Regulatory</span>
+            </span>
+          </a>
+
+          <nav class="nav-desktop" aria-label="Hauptnavigation">
+            <a href="#leistungen" class="nav-link">Frühphasen-Leistungen</a>
+            <a href="#produktfokus" class="nav-link">Produktfokus</a>
+            <a href="#fractional" class="nav-link">Rollenverständnis</a>
+            <a href="#expertise" class="nav-link">Expertise / Wieso ich</a>
+          </nav>
+
+          <button
+            id="mobileMenuBtn"
+            type="button"
+            class="menu-toggle"
+            aria-expanded="false"
+            aria-controls="mobileNav"
+            aria-label="Menü öffnen oder schließen"
+          >
+            <svg id="iconOpen" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+            <svg id="iconClose" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="display: none;">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+
+        <nav id="mobileNav" class="nav-mobile" aria-label="Mobile Navigation">
+          <a href="#leistungen" class="mobile-link">Frühphasen-Leistungen</a>
+          <a href="#produktfokus" class="mobile-link">Produktfokus</a>
+          <a href="#fractional" class="mobile-link">Rollenverständnis</a>
+          <a href="#expertise" class="mobile-link">Expertise / Wieso ich</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- ==================== HERO & FRÜHPHASEN-SCHWERPUNKTE ==================== -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero-grid">
+            <div>
+              <div class="hero-badge">
+                <span class="hero-badge-dot" aria-hidden="true"></span>
+                Frühphasen-Spin-offs · Clinical Precision
+              </div>
+
+              <h1 class="hero-title">
+                Fractional VP Quality &amp; Regulatory für die Frühphase von Spin-offs
+              </h1>
+
+              <p class="hero-desc">
+                Strategische Begleitung auf Führungsebene für junge Spin-offs: Schärfung der Idee und regulatorische
+                Strategie, Unterstützung bei der Ausarbeitung des Businesskonzepts für Investoren, Aufsetzen der ersten
+                QM-Prozesse und Nachweise für die Technische Dokumentation – sowie im späteren Verlauf weiterer Fokus
+                auf QM &amp; RA, gemeinsamer Ausbau dieser Strukturen und zukünftige Unternehmensplanung.
+              </p>
+
+              <div class="hero-actions">
+                <a href="#leistungen" class="btn btn-primary">Frühphasen-Leistungen ansehen</a>
+                <a href="#expertise" class="btn btn-secondary">Expertise &amp; Laufbahn</a>
+              </div>
+
+              <div class="hero-meta-row">
+                <div class="hero-meta-item">
+                  <strong>Idee &amp; Strategie</strong>
+                  <span>Regulatorische Linie &amp; Businesskonzept</span>
+                </div>
+                <div class="hero-meta-item">
+                  <strong>Frühe Nachweise</strong>
+                  <span>Erste QM-Prozesse &amp; TD von Anfang an</span>
+                </div>
+                <div class="hero-meta-item">
+                  <strong>Wachsende Struktur</strong>
+                  <span>QM/RA-Ausbau &amp; Unternehmensplanung</span>
+                </div>
+              </div>
+            </div>
+
+            <aside class="hero-aside-card" aria-label="Kernpunkte der Frühphasen-Begleitung">
+              <div class="aside-tag">Frühphasen-Schwerpunkte</div>
+              <h2 class="aside-title">Vier Schritte von der Idee zur Struktur</h2>
+
+              <ul class="aside-list">
+                <li>
+                  <span class="aside-check" aria-hidden="true">1</span>
+                  <span><strong>Schärfung der Idee &amp; Regulatorische Strategie:</strong> Produktidee und Zweckbestimmung frühzeitig präzisieren und den regulatorischen Pfad festlegen.</span>
+                </li>
+                <li>
+                  <span class="aside-check" aria-hidden="true">2</span>
+                  <span><strong>Businesskonzept für Investoren:</strong> Unterstützung bei der Ausarbeitung eines stimmigen Businesskonzepts für Investoren.</span>
+                </li>
+                <li>
+                  <span class="aside-check" aria-hidden="true">3</span>
+                  <span><strong>Erste QM-Prozesse &amp; TD-Nachweise:</strong> Aufsetzen der ersten QM-Prozesse und Nachweise für die Technische Dokumentation, damit von Anfang an richtig dokumentiert wird.</span>
+                </li>
+                <li>
+                  <span class="aside-check" aria-hidden="true">4</span>
+                  <span><strong>Späterer Fokus auf QM/RA &amp; Planung:</strong> Gemeinsamer Ausbau der QM/RA-Strukturen sowie Begleitung der zukünftigen Unternehmensplanung.</span>
+                </li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== FRÜHPHASEN-LEISTUNGEN (4 EXAKTE PUNKTE) ==================== -->
+      <section id="leistungen" class="section section-white">
+        <div class="container">
+          <div class="section-header">
+            <span class="eyebrow">Leistungen in der Frühphase</span>
+            <h2 class="section-heading">Gezielte Begleitung entlang der frühen Reifegradphasen</h2>
+            <p class="section-lead">
+              Der Fokus liegt auf der frühzeitigen Ausrichtung und Strukturierung: von der Schärfung der Idee und
+              regulatorischen Strategie über das Businesskonzept für Investoren und erste QM-/TD-Nachweise bis hin zum
+              späteren Ausbau von QM &amp; RA und der zukünftigen Unternehmensplanung.
+            </p>
+          </div>
+
+          <div class="pillars-grid">
+            <!-- Schwerpunkt 1 -->
+            <article class="pillar-card">
+              <div>
+                <div class="pillar-top">
+                  <span class="pillar-step">Schwerpunkt 01</span>
+                  <span class="pillar-stage">Idee &amp; Strategie</span>
+                </div>
+                <h3 class="pillar-title">Regulatorische Strategie und Schärfung der Idee</h3>
+                <p class="pillar-desc">
+                  Frühzeitige Schärfung der Produktidee und Entwicklung einer tragfähigen regulatorischen Strategie,
+                  damit Zweckbestimmung, Einordnung und Meilensteine von Beginn an zusammenpassen.
+                </p>
+              </div>
+              <ul class="pillar-points">
+                <li>Schärfung von Idee, Zweckbestimmung und Anwendungskontext</li>
+                <li>Aufbau einer belastbaren regulatorischen Strategie für die frühe Phase</li>
+                <li>Frühzeitige Klarheit über kritische Weichenstellungen</li>
+              </ul>
+            </article>
+
+            <!-- Schwerpunkt 2 -->
+            <article class="pillar-card">
+              <div>
+                <div class="pillar-top">
+                  <span class="pillar-step">Schwerpunkt 02</span>
+                  <span class="pillar-stage">Businesskonzept</span>
+                </div>
+                <h3 class="pillar-title">Unterstützung bei der Ausarbeitung des Businesskonzepts für Investoren</h3>
+                <p class="pillar-desc">
+                  Begleitung bei der Ausarbeitung des Businesskonzepts für Investoren, damit regulatorische Schritte,
+                  Entwicklungsaufwände und Ressourcenplanung schlüssig ineinandergriffen.
+                </p>
+              </div>
+              <ul class="pillar-points">
+                <li>Verzahnung von Produkt-/Regulatorik-Strategie und Businesskonzept</li>
+                <li>Realistische Einordnung von Zeit-, Meilenstein- und Ressourcenbedarf</li>
+                <li>Nachvollziehbare Argumentationsgrundlage für Investorengespräche</li>
+              </ul>
+            </article>
+
+            <!-- Schwerpunkt 3 -->
+            <article class="pillar-card">
+              <div>
+                <div class="pillar-top">
+                  <span class="pillar-step">Schwerpunkt 03</span>
+                  <span class="pillar-stage">Erste QM-Prozesse &amp; TD</span>
+                </div>
+                <h3 class="pillar-title">Aufsetzen der ersten QM-Prozesse und Nachweise für die Technische Dokumentation, damit von Anfang an richtig dokumentiert wird</h3>
+                <p class="pillar-desc">
+                  Aufsetzen schlanker erster QM-Prozesse und erster Nachweise für die Technische Dokumentation, damit
+                  von Anfang an richtig und anschlussfähig dokumentiert wird.
+                </p>
+              </div>
+              <ul class="pillar-points">
+                <li>Erste QM-Prozesse passend zur frühen Entwicklungsphase aufsetzen</li>
+                <li>Nachweise für die Technische Dokumentation von Anfang an sauber anlegen</li>
+                <li>Spätere Nachdokumentationen und unnötige Schleifen vermeiden</li>
+              </ul>
+            </article>
+
+            <!-- Schwerpunkt 4 -->
+            <article class="pillar-card">
+              <div>
+                <div class="pillar-top">
+                  <span class="pillar-step">Schwerpunkt 04</span>
+                  <span class="pillar-stage">QM/RA &amp; Unternehmensplanung</span>
+                </div>
+                <h3 class="pillar-title">Im späteren Verlauf weiterer Fokus auf QM &amp; RA, gemeinsamer Ausbau dieser Strukturen sowie zukünftige Unternehmensplanung</h3>
+                <p class="pillar-desc">
+                  Im späteren Verlauf rücken QM &amp; RA weiter in den Fokus – mit gemeinsamem Ausbau dieser Strukturen
+                  sowie Einordnung und Mitgestaltung der zukünftigen Unternehmensplanung.
+                </p>
+              </div>
+              <ul class="pillar-points">
+                <li>Späterer vertiefter Fokus auf Quality Management (QM) &amp; Regulatory Affairs (RA)</li>
+                <li>Gemeinsamer Ausbau tragfähiger QM-/RA-Strukturen</li>
+                <li>Begleitung und Einordnung der zukünftigen Unternehmensplanung</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== PRODUKTFOKUS-HIERARCHIE ==================== -->
+      <section id="produktfokus" class="section">
+        <div class="container">
+          <div class="section-header">
+            <span class="eyebrow">Produktfokus</span>
+            <h2 class="section-heading">Klare Schwerpunktsetzung nach Produktkategorien</h2>
+            <p class="section-lead">
+              Der inhaltliche Fokus liegt zunächst auf implantierbaren Produkten sowie nicht aktiven
+              Medizinprodukten – anschließend auf Software und dann auf aktiven Medizinprodukten.
+            </p>
+          </div>
+
+          <div class="product-priority-grid" aria-label="Produktfokus-Reihenfolge">
+            <article class="priority-card is-primary">
+              <span class="priority-rank">1. Implantierbare Produkte</span>
+              <h3 class="priority-title">Implantierbare Produkte</h3>
+              <p class="priority-desc">
+                Schwerpunkt auf implantierbaren Medizinprodukten mit hohen Anforderungen an Entwicklung, Nachweise,
+                Risikomanagement und Zulassung.
+              </p>
+            </article>
+
+            <article class="priority-card is-primary">
+              <span class="priority-rank">2. Nicht aktive Medizinprodukte</span>
+              <h3 class="priority-title">Nicht aktive Medizinprodukte</h3>
+              <p class="priority-desc">
+                Anschließender Schwerpunkt auf nicht aktiven Medizinprodukten, Instrumenten und mechanisch oder
+                stofflich geprägten Produkten.
+              </p>
+            </article>
+
+            <article class="priority-card">
+              <span class="priority-rank">3. Anschließend Software</span>
+              <h3 class="priority-title">Anschließend Software</h3>
+              <p class="priority-desc">
+                Danach softwarebasierte Medizinprodukte und digitale Lösungen mit klarer Zweckbestimmung und
+                nachvollziehbaren Nachweisstrukturen.
+              </p>
+            </article>
+
+            <article class="priority-card">
+              <span class="priority-rank">4. Dann aktive Medizinprodukte</span>
+              <h3 class="priority-title">Dann aktive Medizinprodukte</h3>
+              <p class="priority-desc">
+                Sowie aktive Medizinprodukte und kombinierte Systeme mit sauber abgestimmten Anforderungen und
+                Schnittstellen.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== ROLLENVERSTÄNDNIS ==================== -->
+      <section id="fractional" class="section section-white">
+        <div class="container">
+          <div class="section-header">
+            <span class="eyebrow">Rollenverständnis</span>
+            <h2 class="section-heading">Fractional VP Quality &amp; Regulatory in der Frühphase</h2>
+            <p class="section-lead">
+              Strategische Führungskompetenz auf Zeit hilft jungen Teams, zentrale Entscheidungen früh abzusichern und
+              Strukturen schrittweise mit der Organisation wachsen zu lassen.
+            </p>
+          </div>
+
+          <div class="two-col-grid">
+            <div class="info-card">
+              <h3>Strategische Weichenstellung statt Stückwerk</h3>
+              <p>
+                Statt isolierter Einzelleistungen steht die durchgängige Linie aus Idee, Regulatorik,
+                Businesskonzept und früher Dokumentation im Mittelpunkt.
+              </p>
+              <ul class="info-list">
+                <li>Klare Priorisierung in frühen Entwicklungs- und Finanzierungsphasen</li>
+                <li>Saubere Nachweisbasis für die Technische Dokumentation von Anfang an</li>
+                <li>Nahtloser Übergang zum Ausbau von QM/RA und Unternehmensplanung</li>
+              </ul>
+            </div>
+
+            <div class="info-card">
+              <h3>Strukturen, die mit dem Spin-off wachsen</h3>
+              <p>
+                Was in der Frühphase aufgesetzt wird, soll zum Team passen und später tragfähig erweitert werden
+                können.
+              </p>
+              <ul class="info-list">
+                <li>Schlanke erste QM-Prozesse ohne unnötigen Ballast am Start</li>
+                <li>Gemeinsamer Ausbau von QM- und RA-Strukturen mit steigender Reife</li>
+                <li>Vorausschauende Einordnung für die künftige Unternehmensplanung</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== EXPERTISE / WIESO ICH ==================== -->
+      <section id="expertise" class="section section-blue-tint">
+        <div class="container">
+          <div class="section-header">
+            <span class="eyebrow">Expertise / Wieso ich</span>
+            <h2 class="section-heading">Florian Krafft – Erfahrung von der Konstruktion bis zur Bereichsleitung</h2>
+            <p class="section-lead">
+              Langjährige Praxis in Entwicklung, PRRC- und Zulassungsfragen sowie der Führung großer Beratungsteams
+              verbindet technisches Tiefenverständnis mit strategischer Steuerung.
+            </p>
+          </div>
+
+          <div class="profile-summary-box">
+            <p>
+              Als Diplom-Ingenieur für Maschinenbau – Medizintechnik (TU Berlin) habe ich die Entwicklung von
+              Implantaten und chirurgischen Instrumenten von der Konstruktion über die Leitung von Forschung,
+              Entwicklung und Produktmanagement sowie die Rolle als Verantwortliche Person (PRRC) bis hin zur
+              strategischen Leitung großer Consulting-Teams mit Personalverantwortung für 40 Mitarbeitende begleitet.
+            </p>
+            <p>
+              Fachliche Weiterbildungen (u. a. PRRC, Usability Engineering nach ISO 62366-1, Medizinprodukteberater und
+              Projektmanagement) sowie zahlreiche Vorträge, Workshops und Seminare in Gründer-, Hochschul- und
+              Branchenformaten fließen direkt in die Begleitung früher Teams ein.
+            </p>
+
+            <div class="highlights-strip">
+              <div class="highlight-box">
+                <strong>Implantate &amp; PRRC-Praxis</strong>
+                <span>Erfahrung in Konstruktion, Produktlebenszyklus, MDR-Zulassung und PRRC-Aufgaben.</span>
+              </div>
+              <div class="highlight-box">
+                <strong>Strategische Führung</strong>
+                <span>Leitung von Teams bis 40 Mitarbeitenden, Portfoliosteuerung und Aufbau neuer Angebote.</span>
+              </div>
+              <div class="highlight-box">
+                <strong>Transfer- &amp; Vortragspraxis</strong>
+                <span>Langjährige Erfahrung in Vorträgen und Seminaren zu Regulatorik, Entwicklung und Gründung.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Berufliche Laufbahn (ohne Firmennamen, ohne separate Schulungs-/Vortragslisten) -->
+          <div>
+            <h3 class="cv-section-label">Berufliche Laufbahn</h3>
+            <div class="career-stack">
+              <article class="career-card">
+                <span class="career-period">Aktuelle Phase · Consulting &amp; Bereichsleitung</span>
+                <div class="career-title">Leitung von Beratungsbereichen, Portfoliosteuerung &amp; Regulatorische Strategie</div>
+                <div class="career-stage-note">Führung bis 40 Mitarbeitende, Wissenstransfer &amp; Vortragstätigkeit</div>
+                <ul class="career-list">
+                  <li>Strategische Leitung eines großen Consulting-Bereichs mit Personalverantwortung für 40 Mitarbeitende sowie Führung interdisziplinärer Teams und Unterabteilungen</li>
+                  <li>Fachliche und disziplinarische Teamführung (u. a. 12 Mitarbeitende), Entwicklung regulatorischer Strategien und Marktzugangskonzepte sowie Aufbau neuer Beratungsangebote im regulierten Umfeld</li>
+                  <li>Budget-, Ressourcen- und Portfoliosteuerung sowie Wissenstransfer durch Vorträge, Workshops und Seminare in Hochschul-, Förder-, Gründer- und Branchenformaten</li>
+                </ul>
+              </article>
+
+              <article class="career-card">
+                <span class="career-period">Frühere Führungs- &amp; PRRC-Praxis</span>
+                <div class="career-title">Abteilungsleitung F&amp;E / Produktmanagement, PRRC &amp; Regulatorik / Marktzugang</div>
+                <div class="career-stage-note">Produktlebenszyklus, MDR-Compliance &amp; Weiterbildungen</div>
+                <ul class="career-list">
+                  <li>Leitung von F&amp;E-Projekten, Führung eines Teams (6 Mitarbeitende), Verantwortung über den gesamten Produktlebenszyklus von der Idee bis zur Marktreife sowie Entwicklung von Marktzugangsstrategien</li>
+                  <li>Tätigkeit als Verantwortliche Person (PRRC) mit Verantwortung für Marktüberwachung (PMS), Bewertung und Freigabe von Sonderanfertigungen, Abweichungs- und Risikomanagement sowie MDR-Compliance</li>
+                  <li>Begleitung von Zulassungsverfahren, Austausch mit Behörden, Benannten Stellen und Kliniken – ergänzt durch Weiterbildungen in Projektmanagement, PRRC, Usability Engineering (ISO 62366-1) und als Medizinprodukteberater</li>
+                </ul>
+              </article>
+
+              <article class="career-card">
+                <span class="career-period">Technische Basis &amp; Konstruktion</span>
+                <div class="career-title">Konstruktive Entwicklung von Implantaten und chirurgischen Instrumenten</div>
+                <div class="career-stage-note">Produkt- und Fertigungsverständnis von Grund auf</div>
+                <ul class="career-list">
+                  <li>Konstruktive Entwicklung von Implantaten und chirurgischen Instrumenten mit fundiertem Verständnis für Konstruktion, Werkstoffe, Prozesse und klinische Anwendung</li>
+                  <li>Solide ingenieurtechnische Grundlage für spätere Entscheidungen zu Produktlebenszyklus, Qualität und Zulassung</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+
+          <!-- Ausbildung im exakt gleichen eckigen Kasten-Design wie die Laufbahn-Karten darüber -->
+          <div class="education-wrapper">
+            <h3 class="cv-section-label">Ausbildung</h3>
+            <article class="career-card">
+              <span class="career-period">Oktober 2005 – August 2013</span>
+              <div class="career-title">Technische Universität Berlin</div>
+              <div class="career-stage-note">Studiengang Maschinenbau – Medizintechnik · Abschluss: Dipl.-Ing.</div>
+              <ul class="career-list">
+                <li>Studium Maschinenbau – Medizintechnik an der Technischen Universität Berlin (Oktober 2005 – August 2013)</li>
+                <li>Abschluss als Diplom-Ingenieur (Dipl.-Ing.)</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- ==========================================================================
+     INTERAKTIVE FUNKTIONEN (MOBILE NAVIGATION)
+     ========================================================================== -->
+  <script>
+    (function () {
+      "use strict";
+
+      function initPageInteractions() {
+        try {
+          var menuBtn = document.getElementById("mobileMenuBtn");
+          var mobileNav = document.getElementById("mobileNav");
+          var iconOpen = document.getElementById("iconOpen");
+          var iconClose = document.getElementById("iconClose");
+
+          if (menuBtn && mobileNav) {
+            var setMobileNav = function (open) {
+              mobileNav.classList.toggle("is-open", open);
+              menuBtn.setAttribute("aria-expanded", open ? "true" : "false");
+              if (iconOpen && iconClose) {
+                iconOpen.style.display = open ? "none" : "block";
+                iconClose.style.display = open ? "block" : "none";
+              }
+            };
+
+            menuBtn.addEventListener("click", function () {
+              var isOpen = mobileNav.classList.contains("is-open");
+              setMobileNav(!isOpen);
+            });
+
+            var mobileLinks = mobileNav.querySelectorAll("a");
+            for (var i = 0; i < mobileLinks.length; i++) {
+              mobileLinks[i].addEventListener("click", function () {
+                setMobileNav(false);
+              });
+            }
+          }
+        } catch (navErr) {
+          var appRoot = document.getElementById("site-app");
+          if (appRoot) {
+            var notice = document.createElement("div");
+            notice.style.padding = "1rem";
+            notice.style.margin = "1rem";
+            notice.style.backgroundColor = "#FFFFFF";
+            notice.style.border = "1px solid #ACC2D8";
+            notice.style.color = "#0D223A";
+            notice.textContent = "Hinweis: Die Navigation konnte nicht vollständig initialisiert werden.";
+            appRoot.prepend(notice);
+          }
+        }
+      }
+
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", initPageInteractions);
+      } else {
+        initPageInteractions();
+      }
+    })();
+  </script>
+</body>
+</html>
